@@ -136,7 +136,8 @@ footer p {
     font-size: 1.2em;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
+    display: inline-block; /* or block if you want it full width */
 }
 
 .discord-button:hover {
