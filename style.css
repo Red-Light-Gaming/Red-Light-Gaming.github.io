@@ -1,0 +1,161 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff0000;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+header .logo h1 {
+    font-size: 1.5em;
+    color: white;
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #990000;
+}
+
+/* Main Section */
+.main-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+}
+
+.main-section h2 {
+    font-size: 2.5em;
+}
+
+.main-section p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #990000;
+}
+
+/* Role Recruitment Section */
+#roles {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #333;
+}
+
+.role {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.role h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.role ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.role ul li {
+    margin: 10px 0;
+}
+
+.role .cta-button {
+    width: 100%;
+    text-align: center;
+}
+
+/* Footer Section */
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+.discord-button {
+    background-color: #7289da;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.discord-button:hover {
+    background-color: #5b6eae;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #roles {
+        flex-direction: column;
+    }
+
+    .role {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
