@@ -129,6 +129,10 @@ footer p {
     font-size: 1.1em;
 }
 
+.discord-button-wrapper {
+    margin-top: 20px;
+}
+
 .discord-button {
     background-color: #7289da;
     color: white;
@@ -136,13 +140,13 @@ footer p {
     font-size: 1.2em;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
-    display: inline-block; /* or block if you want it full width */
+    display: inline-block;
 }
 
 .discord-button:hover {
     background-color: #5b6eae;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
