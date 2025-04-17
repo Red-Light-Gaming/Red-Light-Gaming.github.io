@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background-color: #dc143c;
+    background-color: #ff0000;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -71,7 +71,7 @@ section {
 
 section h2 {
     font-size: 2.2em;
-    color: #dc143c;
+    color: #ff0000;
     margin-bottom: 20px;
 }
 
@@ -82,7 +82,7 @@ section p {
 
 /* Links inside paragraphs */
 section p a {
-    color: #dc143c;
+    color: #ff0000;
     text-decoration: none;
     font-weight: 500;
 }
@@ -93,7 +93,7 @@ section p a:hover {
 
 /* CTA Button */
 .cta-button {
-    background-color: #dc143c;
+    background-color: #ff0000;
     color: white;
     padding: 12px 24px;
     font-size: 1.1em;
@@ -105,7 +105,7 @@ section p a:hover {
 }
 
 .cta-button:hover {
-    background-color: #a20e2a;
+    background-color: #80031a;
 }
 
 /* Role Section */
