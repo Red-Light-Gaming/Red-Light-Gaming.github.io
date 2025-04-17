@@ -3,11 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Light Gaming</title>
+    <title>Welcome to Red Light Gaming</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .main-section, #roles, footer {
+            margin-top: 40px;
+        }
+        .role {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #0056b3;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        .cta-button, .discord-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #7289da;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover, .discord-button:hover {
+            background-color: #5b6eae;
+        }
+        footer {
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
         <div class="logo">
             <img src="assets/images/logo.png" alt="Red Light Gaming Logo">
@@ -23,8 +89,19 @@
         </nav>
     </header>
 
-    <!-- Main Section -->
+    <!-- Home Section -->
     <section id="home" class="main-section">
+        <h1>Welcome to Red Light Gaming! 🎉</h1>
+        <p>Our story began on January 27th, 2023, when we launched a completely rebranded community server. Before that, we had another server, but decided to start fresh with the name "Red Light Gaming" – it just popped into our heads and stuck!</p>
+        <p>We're all about chill people looking for a chill community where everyone is welcome. We’ve built a space where you can relax and connect with others who share your passion for gaming.</p>
+        <h2>Our Focus</h2>
+        <p>Unlike many other gaming servers, we focus on specific games: <u>Guild Wars 2</u>, <u>Warframe</u>, <u>Rocket League</u>, <u>Project Zomboid</u>, and <u>Apex Legends</u>. But this doesn’t mean you’re not welcome! While these are our core titles, everyone is warmly welcomed into our community, regardless of what you play.</p>
+        <h2>Our Community</h2>
+        <p>We're primarily an NA East-based community (operating in EST time zone), but players of all regions are welcome. Please keep in mind that our events and schedules are based on Eastern Standard Time, which might not be ideal for everyone. However, we’re incredibly excited to have players from all over the world as part of our Red Light Gaming family!</p>
+    </section>
+
+    <!-- Apply Section -->
+    <section id="apply" class="main-section">
         <h2>Looking for New Team Members</h2>
         <p>Join our Discord and help grow the Red Light Gaming community!</p>
         <a href="https://discord.com/channels/1068677462948581376/1286680651889901629" class="cta-button">Apply Now</a>
@@ -56,28 +133,28 @@
             <a href="https://discord.com/channels/1068677462948581376/1286680651889901629" class="cta-button">Apply Now</a>
         </div>
 
-<div class="role">
-    <h3>Developers</h3>
-    <ul>
-        <li>Must know how to write Python, Java, or other relevant languages</li>
-        <li>Must be passionate about developing apps, websites, and bots</li>
-        <li>Must be able to contribute actively to the community’s projects</li>
-    </ul>
-    <a href="https://discord.com/channels/1068677462948581376/1286680651889901629" class="cta-button">Apply Now</a>
-</div>
+        <div class="role">
+            <h3>Developers</h3>
+            <ul>
+                <li>Must know how to write Python, Java, or other relevant languages</li>
+                <li>Must be passionate about developing apps, websites, and bots</li>
+                <li>Must be able to contribute actively to the community’s projects</li>
+            </ul>
+            <a href="https://discord.com/channels/1068677462948581376/1286680651889901629" class="cta-button">Apply Now</a>
+        </div>
     </section>
 
-<!-- Footer Section -->
-<footer id="contact">
-    <p>
-        Contact us: Message <strong>RLGKiller</strong> on Discord or 
-        <a href="https://discord.gg/XMPsxtEnKG" style="color: #7289da;">join our Discord server</a> 
-        and open a ticket for the fastest response.
-    </p>
-    <div class="discord-button-wrapper">
-        <a href="https://discord.gg/XMPsxtEnKG" class="discord-button">Join our Discord</a>
-    </div>
-</footer>
+    <!-- Footer -->
+    <footer id="contact">
+        <p>
+            Contact us: Message <strong>RLGKiller</strong> on Discord or 
+            <a href="https://discord.gg/XMPsxtEnKG" style="color: #7289da;">join our Discord server</a> 
+            and open a ticket for the fastest response.
+        </p>
+        <div class="discord-button-wrapper">
+            <a href="https://discord.gg/XMPsxtEnKG" class="discord-button">Join our Discord</a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
