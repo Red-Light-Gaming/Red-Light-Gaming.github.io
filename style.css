@@ -6,19 +6,19 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
     line-height: 1.6;
 }
 
-/* Header Section */
+/* Header */
 header {
+    background-color: #dc143c;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #ff0000;
     flex-wrap: wrap;
 }
 
@@ -30,121 +30,132 @@ header .logo {
 header .logo img {
     width: 50px;
     height: 50px;
+    object-fit: contain;
 }
 
 header .logo h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: white;
     margin-left: 10px;
 }
 
 nav ul {
     display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-
-nav ul li {
-    margin-left: 20px;
+    list-style: none;
+    gap: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1em;
-    padding: 5px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #990000;
-    border-radius: 5px;
+    background-color: #a20e2a;
 }
 
-/* General Section Styling */
+/* Section Styling */
 section {
+    padding: 60px 20px;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #222;
-}
-
-section:nth-of-type(even) {
-    background-color: #333;
+    max-width: 900px;
+    margin: auto;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    margin-top: 40px;
 }
 
 section h2 {
-    font-size: 2.5em;
+    font-size: 2.2em;
+    color: #dc143c;
     margin-bottom: 20px;
-    color: #ff0000;
 }
 
 section p {
-    font-size: 1.2em;
-    margin: 20px 0;
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+/* Links inside paragraphs */
+section p a {
+    color: #dc143c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+section p a:hover {
+    text-decoration: underline;
 }
 
 /* CTA Button */
 .cta-button {
-    background-color: #ff0000;
+    background-color: #dc143c;
     color: white;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 12px 24px;
+    font-size: 1.1em;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #990000;
+    background-color: #a20e2a;
 }
 
-/* Role Recruitment Section */
+/* Role Section */
 #roles {
     display: flex;
     justify-content: space-around;
-    padding: 50px 20px;
-    background-color: #333;
+    padding: 60px 20px;
+    background-color: #1e1e1e;
     flex-wrap: wrap;
 }
 
 .role {
-    background-color: #444;
+    background-color: #2a2a2a;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
     margin: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .role h3 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
 }
 
 .role ul {
-    list-style-type: none;
-    margin-bottom: 20px;
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
 }
 
 .role ul li {
-    margin: 10px 0;
+    margin: 8px 0;
+    color: #ccc;
 }
 
 .role .cta-button {
     width: 100%;
-    text-align: center;
+    margin-top: 15px;
 }
 
-/* Footer Section */
+/* Footer */
 footer {
-    background-color: #222;
+    background-color: #121212;
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-footer p {
-    font-size: 1.1em;
+    padding: 30px 20px;
+    margin-top: 60px;
+    color: #888;
+    font-size: 0.95em;
 }
 
 .discord-button-wrapper {
@@ -155,17 +166,18 @@ footer p {
     background-color: #7289da;
     color: white;
     padding: 10px 20px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 .discord-button:hover {
     background-color: #5b6eae;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -174,19 +186,20 @@ footer p {
 
     nav ul {
         flex-direction: column;
+        gap: 10px;
         margin-top: 10px;
-    }
-
-    nav ul li {
-        margin: 10px 0;
     }
 
     #roles {
         flex-direction: column;
+        align-items: center;
     }
 
     .role {
         width: 90%;
-        margin-bottom: 20px;
+    }
+
+    section {
+        padding: 40px 15px;
     }
 }
