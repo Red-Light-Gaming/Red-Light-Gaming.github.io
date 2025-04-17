@@ -19,6 +19,12 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #ff0000;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
 }
 
 header .logo img {
@@ -34,6 +40,8 @@ header .logo h1 {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
 }
 
 nav ul li {
@@ -49,24 +57,32 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #990000;
+    border-radius: 5px;
 }
 
-/* Main Section */
-.main-section {
+/* General Section Styling */
+section {
     text-align: center;
     padding: 50px 20px;
     background-color: #222;
 }
 
-.main-section h2 {
-    font-size: 2.5em;
+section:nth-of-type(even) {
+    background-color: #333;
 }
 
-.main-section p {
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+section p {
     font-size: 1.2em;
     margin: 20px 0;
 }
 
+/* CTA Button */
 .cta-button {
     background-color: #ff0000;
     color: white;
@@ -88,6 +104,7 @@ nav ul li a:hover {
     justify-content: space-around;
     padding: 50px 20px;
     background-color: #333;
+    flex-wrap: wrap;
 }
 
 .role {
@@ -95,6 +112,7 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 10px;
     width: 30%;
+    margin: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -147,12 +165,20 @@ footer p {
     background-color: #5b6eae;
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 
     #roles {
